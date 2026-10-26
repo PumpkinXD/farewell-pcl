@@ -105,7 +105,7 @@ PCL 的 GitHub 仓库 README 原文是这样的（照抄，一个字没改）：
 
 > - 别想在这里面找到解密游戏的线索，**那部分的代码被我抠掉了**
 > - 解锁隐藏主题的相关代码**也被抠掉了**，所以别想着用翻源代码这种歪门邪道来绕过解密了.jpg
-> - 源代码库**并不是即时更新的**，而是在每次 PCL 发布更新时**（手动）**同步一次
+> - 源代码库**并不是即时更新的**，而是在每次 PCL 发布更新时 **（手动）** 同步一次
 
 **这几句的分量在于：它们是作者本人承认公开代码不完整。** 注意这不是外人的指控——是他在自己的 README 里写的。
 
@@ -117,7 +117,7 @@ PCL 的 GitHub 仓库 README 原文是这样的（照抄，一个字没改）：
 
 关于"能不能编译"，这里现在可以给出准确的时间线了：
 
-- **LICENCE 的提交 `56cb6bc`（2024 年 5 月；GitHub 按 UTC 显示为 05-26，按北京时间则为 05-27）标题就叫"可编译版本"**，它删去了协议里"不能直接编译"那句话。所以**"不可编译"这个说法在 2024 年 5 月之后就不再适用了**——继续拿它说事，是会被打脸的。
+- **LICENCE 的提交 `56cb6bc`（2024 年 5 月；GitHub 按 UTC 显示为 05-26，按北京时间则为 05-27）标题就叫"可编译版本"**，它删去了协议里"不能直接编译"那句话。所以 **"不可编译"这个说法在 2024 年 5 月之后就不再适用了**——继续拿它说事，是会被打脸的。
 - 我没有逐版本比对 README 的历史修订，但结论不受影响——因为下面这两条已经足够，且它们现在仍然成立。
 
 所以本文只用两个**现在仍然成立、且可以自己验证**的说法：
@@ -126,7 +126,7 @@ PCL 的 GitHub 仓库 README 原文是这样的（照抄，一个字没改）：
   （至于"同步是不是手动执行的"——历史 README 确实写过"（手动）"，当前版删掉了。**这不是本文的论据，不依赖它。**）
 - 即便能编译出来，**你也没有任何办法验证它和你从官网下载的那个 exe 是一致的**——没有 reproducible build，没有官方构建流程，没有签名比对。
 
-第二点才是关键。**"能不能编译"其实是个次要问题**；真正的问题是**"编译出来的是不是你正在跑的那个东西"**。这一点，无论那份代码现在能不能编译，都成立。
+第二点才是关键。**"能不能编译"其实是个次要问题**；真正的问题是 **"编译出来的是不是你正在跑的那个东西"**。这一点，无论那份代码现在能不能编译，都成立。
 
 > **说句公道话**：`56cb6bc` 那条提交的方向是**放宽**（删掉一条限制），作者确实在往更开放的方向改。这和 LICENCE 历次修订的方向是一致的（见第 2 条）。**本文指出"不可编译"已过时，不是在挑刺，恰恰是不想让过时的说法削弱后面那些站得住的论证。**
 
@@ -684,7 +684,7 @@ Private Sub McLaunchCustom(Loader As LoaderTask(Of Integer, Integer))
 - **Mod** 是你自己写的原创作品，不含 Mojang 的实质性代码或内容，归你所有，**可以分发**；
 - **Modded Version** 是 Mod 与游戏本体结合之后的那个产物，**不可以分发**。
 
-官方使用准则把这条线说得更明确：你可以创建、使用或分发 Mod，前提是**"您只分发 Mod，而非修改版 Minecraft"**[citation:6]。
+官方使用准则把这条线说得更明确：你可以创建、使用或分发 Mod，前提是 **"您只分发 Mod，而非修改版 Minecraft"** [citation:6]。
 
 现在把两种格式放到这条线两边：
 
@@ -728,8 +728,8 @@ Private Sub McLaunchCustom(Loader As LoaderTask(Of Integer, Integer))
 
 先统一一下叫法。不同启动器说法不一样，新人很容易被绕晕：
 
-- PCL、HMCL 里叫**"版本隔离"**；
-- Prism、SJMCL 等启动器叫**"实例（instance）"**——用这个叫法的启动器还有不少，篇幅所限不一一列举；
+- PCL、HMCL 里叫 **"版本隔离"**；
+- Prism、SJMCL 等启动器叫 **"实例（instance）"**——用这个叫法的启动器还有不少，篇幅所限不一一列举；
 - 本质上是同一件事：**每个游戏环境一套独立文件夹，mod、配置、存档、Java 设置各自独立，互不干扰。**
 
 然后是重点。很多人以为"实例隔离是玩大型整合包的老手才需要的进阶功能"——**恰恰相反，最需要它的是新人。**
@@ -997,7 +997,7 @@ Modrinth 平台官方出的启动器，内部代号 **Theseus**。Rust + Tauri �
 Windows、macOS、Linux 全平台，**原生适配 Intel 与 Apple Silicon**[citation:33]。
 
 **实例与整合包**
-- 支持**原版（Vanilla）**及 Forge / Fabric / Quilt，以及 NeoForge[citation:22][citation:24]；
+- 支持 **原版（Vanilla）** 及 Forge / Fabric / Quilt，以及 NeoForge[citation:22][citation:24]；
 - `.mrpack` 原生导入导出，导出后可直接上传 Modrinth 或发给朋友[citation:24][citation:26]；
 - 可以在整合包里**单独更新、添加、移除某一个 mod**[citation:24]；
 - 多个 modded 实例并行运行；可查看并分享当前及历史日志[citation:24]。
@@ -1075,7 +1075,7 @@ Windows 10 1809+（x64 / ARM64）、macOS 10.15+（Intel / Apple Silicon）、Li
 ### 6. SJMCL（SJMC Launcher）
 
 **是什么**
-由**上海交通大学 Minecraft 社（SJMC-Dev）**自主研发的开源跨平台启动器，Tauri + TypeScript，GPL-3.0，仓库在 `UNIkeEN/SJMCL`[citation:56][citation:62][citation:68]。
+由 **上海交通大学 Minecraft 社（SJMC-Dev）** 自主研发的开源跨平台启动器，Tauri + TypeScript，GPL-3.0，仓库在 `UNIkeEN/SJMCL`[citation:56][citation:62][citation:68]。
 
 **这是名单里唯一一个由高校社团维护的项目。**
 
@@ -1260,7 +1260,7 @@ DDoS 攻击、GitHub 账号被封，不是龙腾猫跃的错，也不该成为�
 |---|---|
 | PCL 公开代码仓库（README 原文，已核对；注意它是 Organization 而非个人账号） | `github.com/Meloong-Git/PCL`<br>README 原文："包含 PCL 的**大部分源代码**，包括 UI 库、动画模块、下载模块、Minecraft 启动模块等！代码**并不是实时更新的**，它会在每次 PCL 发布更新时同步一次。"<br>另含"**PCL 功能投票**：来参加投票吧，开发者会优先处理票数较高的项目！"（用于佐证"参与方式是表态"） |
 | ✅ **账号归属（已核实，勿写反）** | `Meloong-Git` = **Organization**（组织）；`UNIkeEN` = **User**（个人）；`PrismLauncher`、`PCL-Community` = Organization<br>验证：`api.github.com/users/Meloong-Git` → `type`<br>**结论：不要拿"组织 vs 个人"做对比，PCL 反而挂在组织下** |
-| ⚠️ **历史 README（commit `56cb6bc`，2024 年 5 月）——"手动同步"与"代码被抠掉"两条的唯一出处** | `github.com/Meloong-Git/PCL/blob/56cb6bc7d9ab96801c1357f9516bd796f48f0f97/README.md`<br>该版本"一些无趣的小细节"一节原文：<br>· "别想在这里面找到解密游戏的线索，**那部分的代码被我抠掉了**"<br>· "解锁隐藏主题的相关代码**也被抠掉了**，所以别想着用翻源代码这种歪门邪道来绕过解密了.jpg"<br>· "源代码库**并不是即时更新的**，而是在每次 PCL 发布更新时**（手动）**同步一次"<br>同期还有"PCL 功能投票：……开发者会优先处理票数较高的**帖子**！"（当前版作"项目"）<br>⚠️ **当前 README 已删去整节**，只剩"大部分源代码""并不是实时更新的"。引用时必须标明"历史版本（commit `56cb6bc`）"<br>📌 **删除该节的提交**（即"这段现在没有了"的出处）：commit **`b6a52f9`** `github.com/Meloong-Git/PCL/commit/b6a52f90f67645ec12a68951a98289e9c17e44f7`——diff 中可见上述三行被整段移除<br>📌 另注：该历史版本作"提供了 PCL 的**大多数**源代码"，当前版作"**大部分**"；措辞变了，意思一致 |
+| ⚠️ **历史 README（commit `56cb6bc`，2024 年 5 月）——"手动同步"与"代码被抠掉"两条的唯一出处** | `github.com/Meloong-Git/PCL/blob/56cb6bc7d9ab96801c1357f9516bd796f48f0f97/README.md`<br>该版本"一些无趣的小细节"一节原文：<br>· "别想在这里面找到解密游戏的线索，**那部分的代码被我抠掉了**"<br>· "解锁隐藏主题的相关代码**也被抠掉了**，所以别想着用翻源代码这种歪门邪道来绕过解密了.jpg"<br>· "源代码库**并不是即时更新的**，而是在每次 PCL 发布更新时 **（手动）** 同步一次"<br>同期还有"PCL 功能投票：……开发者会优先处理票数较高的**帖子**！"（当前版作"项目"）<br>⚠️ **当前 README 已删去整节**，只剩"大部分源代码""并不是实时更新的"。引用时必须标明"历史版本（commit `56cb6bc`）"<br>📌 **删除该节的提交**（即"这段现在没有了"的出处）：commit **`b6a52f9`** `github.com/Meloong-Git/PCL/commit/b6a52f90f67645ec12a68951a98289e9c17e44f7`——diff 中可见上述三行被整段移除<br>📌 另注：该历史版本作"提供了 PCL 的**大多数**源代码"，当前版作"**大部分**"；措辞变了，意思一致 |
 | ✅ **"可编译版本"提交（推翻"不可编译"说法）** | commit **`56cb6bc`**（2024 年 5 月，标题"可编译版本"）——**删去了协议中"不能直接编译"一句**。所以"不可编译"在 2024 年 5 月后已过时，**不要再引用** |
 | **MultiMC fork 政策原文（第 7 条②对照用，Apache-2.0）** | `github.com/MultiMC/Launcher` → README 的 "Forking/Redistributing/Custom builds policy" 一节<br>关键句："The source code has been **debranded** and now builds as **DevLauncher** by default. **You must provide your own branding** if you want to distribute your own builds." |
 | **MultiMC 系 48 小时重建事件（第 7 条结尾）** | `prismlauncher.org/wiki/overview/faq`（"What happened to PolyMC? Why is there a new fork?"）<br>时间线：2022-10-17 维护者移除全部贡献者 → 48 小时内 fork 出新项目 → 10-20 发布 9.0 |
@@ -1377,6 +1377,7 @@ DDoS 攻击、GitHub 账号被封，不是龙腾猫跃的错，也不该成为�
 | 日期 | 内容 | 来源 |
 |---|---|---|
 | 2026-10-26 | 初稿。 | — |
+| 2026-10-26 | 修复排版：9 处加粗标记未生效（GFM 强调标记要求左边界为非空白、非标点字符，中文标点紧邻 `**` 时会被当作普通文本），已在边界补空格。 | 自查 |
 
 > 本文首次公开即以此版为准；此前的修改属写作过程，不计入更正。
 > **欢迎提 issue 或 PR**——指出错误比附和更有价值。
